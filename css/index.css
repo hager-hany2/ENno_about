@@ -1,0 +1,356 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+   
+}
+body{
+    overflow-x: hidden;
+}
+/* -----------------------start home----------------------- */
+.home{
+    margin-top: 101px;
+}
+.home h1{
+    width: 369px;
+    font-size: 52px;
+    width: 599px;
+}
+.home p{
+    font-size: 18px;
+    width: 966px;
+} 
+.info-home{
+    margin-top: 122px;
+}
+.home a{
+    background-color: #259e25;
+    border-radius: 69px;
+    padding: 12px 26px;
+    margin-right: 21px;
+}
+.home svg{
+    color: green;
+   
+}
+.home span{
+
+}
+.home span:hover{
+color: green;
+}
+.home img{
+    width:600px;
+}
+
+.home-img{
+    animation-name: up-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate
+}
+@keyframes up-down{
+    to{
+        transform: translatey(-20px);
+        transform: translatey(20px);
+    }
+}
+
+/* -----------------------end home----------------------- */
+/* ----------------------start secion home many------------ */
+.home-card{
+    margin-top: 100px;
+    transition: .3s; 
+    margin-bottom: -20px;
+    padding: 80px 20px;
+}
+.home-card .card{
+    background-color: #a6cd8517;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    margin-bottom: 17px;
+    padding-bottom: 30px;
+}
+
+.home-card  :hover  {
+    transition: .10s;
+    transform: translateY(-10px);
+   
+}
+.home-card svg{
+    margin-bottom: 20px;
+   margin-top: 20px;
+}
+.home-card .card:hover h4 {
+    color: green;
+    
+    transform: translateY(0px);
+    }
+    .home-card .card:hover p {
+    
+       transform: translateY(0px);
+        }
+
+
+/* ----------------------end secion home many------------ */
+/* -------------------------start About us--------------- */
+.about-us-title-us{
+
+
+}
+.about-us-title div{
+    position: relative;
+}
+.about-us-title h1{
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #545353;
+    position: relative;
+    z-index: 2;
+}
+.about-us-title span{
+    color: #8080800d;
+    text-transform: uppercase;
+  
+    font-size: 55px;
+    font-weight: bolder;
+    position: relative;
+    top: 35px;
+
+    z-index: 1;
+}
+.about-us-title p{
+    
+}
+.about-us-info{
+    margin-top: 44px;
+}
+.about-us-info img{
+    width:600px;
+}
+.about-us-info h2{
+    color: #626161;
+    font-weight: bolder;
+}
+.about-us-info p:first-child{
+
+}
+.about-us-info p:nth-child(4){
+    
+}
+.about-us-info p:last-child{
+
+}
+.about-us-info svg{
+    color: green;
+}
+.about{
+    margin-top: 22px;
+}
+.play-btn{
+    width: 60px;
+    position: absolute;
+    left: 45%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: white;
+    cursor: pointer;
+}
+.cards-about {
+    margin-top: 100px;
+}
+.cards-about h1{
+    color: green;
+    font-weight: bolder;
+}
+.cards-about p{
+color: gray;
+}
+.cards-about .card{
+    border: none;
+    margin-bottom: 10px;
+}
+.video_player{
+    width: 60%;
+    position: absolute;
+    left: 45%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    left: 51%;
+    top: 210%;
+    cursor: pointer;
+    z-index: 200;
+    display: none;
+}
+.video_player{
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 1, 0.404);
+    display: block;
+    top: 365px;
+    left: 793px;
+    height: 110%;
+    width: 103%;
+    display: none;
+}
+
+
+.video_player video{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    width: 750px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    object-fit: cover;
+}
+
+video:focus{
+    outline: none;
+}
+.close_btn{
+    color: white;
+    position: absolute;
+    top: 51px;
+    right: 69px;
+   
+    cursor: pointer;
+    top: 140px;
+    right: 128px;
+}
+.play-btn
+{
+    position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #16bc16;
+color: #fff;
+font-size: 50px;
+width: 60px;
+ height: 60px;
+z-index: 2;
+border-radius: 100%;
+position: relative;
+top: -43%;
+
+left: 47%;
+top: -49%;
+} 
+.play-btn span{
+    position: absolute;
+    top: -13px;
+    left: 20px;
+    transition: .3s;
+}
+.play-btn span:hover{
+width: 40;
+height: 40;
+}
+
+.play-btn:before{
+content: "";
+position: absolute;
+border:5px solid #16bc16;
+border-radius: 50%;
+top: -8px;
+left: -8px;
+bottom: -8px;
+right: -8px;
+animation: bloom1 1.5s linear infinite;
+opacity: 0;
+z-index: 20;
+transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+
+}
+
+.play-btn:after{
+    content: "";
+    position: absolute;
+    border: 5px solid #16bc16;
+    border-radius: 50%;
+    top: -10px;
+    left: -10px;
+    bottom: -10px;
+    right: -10px;
+    animation: bloom2 1.5s linear infinite;
+    opacity: 0;
+    z-index: 20;
+    animation-delay: .4s;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    @keyframes  bloom1{
+        0%{
+            transform: scale(.5);
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            transform: scale(1.5);
+        }
+    }
+    @keyframes  bloom2{
+        0%{
+            transform: scale(.5);
+        }
+        50%{
+            opacity: 1;
+        }
+        100%{
+            transform: scale(1.5);
+        }
+    }
+    .back{
+        position: relative;
+        top: 35%;
+        width: 107px;
+        height: 107px;
+        top: 28%;
+        left: 39%;
+    left: 40%;
+        background-color: #16bc1654;
+        /* z-index: 20000; */
+        width: 96px;
+        height: 96px;
+        position: absolute;
+        border-radius: 50%;
+    }
+@media only screen and (max-width:1397px) {
+    .about-us-info img{
+        width: 480px;
+    }
+  }
+@media only screen and (max-width:768px){
+    video{
+        width: 95%;
+        width: 400px;
+    }
+}
+@media only screen and (max-width:734px){
+    .video_player{
+        left: 48%;}
+        .close_btn{
+            right: 128px;
+        }
+        #myvideo{
+            width: 578px;
+            left: 376px;
+            width: 463px;
+            left: 386px;
+            width: 342px;
+            left: 371px;
+            width: 400px;
+        }
+}
+
+ /* -------------------------end About us------------------ */
+ /* -------------------------start Services---------------- */
+.Services{
+    background-color: rgb(248, 244, 244);
+}
+
+
+ /* --------------------------end Services---------------- */
